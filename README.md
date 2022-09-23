@@ -1,2 +1,2 @@
 # JavaScript Guides
-Several guides written in JavaScript programming language.
+Several guides in JavaScript programming language.
