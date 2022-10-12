@@ -10,7 +10,6 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
 import static org.springframework.web.reactive.function.server.RequestPredicates.accept;
 
-
 @Configuration(proxyBeanMethods = false)
 public class HelloRouter {
 
@@ -18,6 +17,6 @@ public class HelloRouter {
   public RouterFunction<ServerResponse> route(HelloHandler helloHandler) {
 
     return RouterFunctions
-      .route(GET("/hello").and(accept(MediaType.APPLICATION_JSON)), helloHandler::hello);
+        .route(GET("/hello").and(accept(MediaType.APPLICATION_JSON)), helloHandler::hello);
   }
 }

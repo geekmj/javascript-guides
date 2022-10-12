@@ -105,3 +105,6 @@ dist
 
 # Java Specific
 target
+
+# Visual Studio Code
+.vscode
